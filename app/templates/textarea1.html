@@ -1,0 +1,18 @@
+<label class="text-xl font-bold " for="xml">XML :</label>
+<textarea
+  id="xml"
+  rows="12"
+  class="block p-2 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+  name="xml"
+  {% if jsonxml == False %}
+  placeholder="Enter your XML text here..."
+  required
+  autofocus
+  {% endif %}
+  {% if jsonxml%}
+  placeholder="Your XML will be here"
+  readonly
+  {% endif %}
+>
+{{xml}}</textarea
+>
